@@ -1,0 +1,31 @@
+.profit_title {
+	font-size: 14px;
+	letter-spacing: -0.41px;
+	margin-bottom: 6px;
+	color: #ffffffb2;
+	text-align: center;
+}
+
+.profit_row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.profit_icon {
+	width: 24px;
+	height: 24px;
+}
+
+.profit_question {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 100px;
+	padding: 1px;
+	background-color: #bcbdc866;
+	color: #252654;
+}

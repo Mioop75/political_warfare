@@ -1,0 +1,24 @@
+.option {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border: 1px;
+	cursor: pointer;
+	font-family: 'SF Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22.4px;
+	letter-spacing: -0.02em;
+}
+
+.isSelected {
+	background-color: rgba(255, 255, 255, 0.04);
+	border-radius: 12px;
+}
+
+.option:hover {
+	background-color: rgba(255, 255, 255, 0.04);
+	border-radius: 12px;
+}

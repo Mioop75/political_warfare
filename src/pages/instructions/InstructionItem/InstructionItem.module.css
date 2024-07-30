@@ -1,0 +1,48 @@
+.img {
+	width: auto;
+	height: auto;
+	position: relative;
+	box-shadow: 0px 12px 26px 0px rgba(21, 21, 41, 0.25),
+		0px 48px 48px 0px rgba(21, 21, 41, 0.22),
+		0px 108px 65px 0px rgba(21, 21, 41, 0.13),
+		0px 191px 77px 0px rgba(21, 21, 41, 0.04),
+		0px 299px 84px 0px rgba(21, 21, 41, 0);
+	top: 5%;
+	z-index: -1;
+}
+
+.block {
+	width: 100%;
+	background-color: var(--bg-dark-color);
+	padding: 30px 20px 30px 20px;
+	border-radius: 40px 40px 0px 0px;
+}
+
+.container {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 0 6px;
+}
+
+.text {
+	padding: 0 6px;
+	margin-bottom: 30px;
+	letter-spacing: 0.02em;
+}
+
+.additionItem {
+	margin-bottom: 30px;
+}
+
+.btn {
+	width: 97%;
+	margin: 0 6px 20px;
+}

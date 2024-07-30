@@ -1,0 +1,46 @@
+.profile {
+	max-width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	margin: 0 auto 30px;
+	border-radius: 16px;
+	background-color: #1f203f;
+	padding: 10px;
+}
+
+.firstItem {
+	max-width: 86px;
+}
+
+.avatar {
+	margin-bottom: 6px;
+}
+
+.middleItem {
+	padding: 0 23px;
+	position: relative;
+}
+
+.middleItem::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 35px;
+	background-color: #ffffff33;
+}
+
+.middleItem::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 35px;
+	background-color: #ffffff33;
+}

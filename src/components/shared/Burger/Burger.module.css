@@ -1,0 +1,30 @@
+.burger {
+	width: 44px;
+	height: 44px;
+	padding: 10px 0;
+	position: relative;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.burger div {
+	background-color: var(--white-color);
+	width: 20px;
+	height: 2px;
+}
+
+.burger::before {
+	content: '';
+	display: block;
+	background-color: var(--white-color);
+	width: 20px;
+	height: 2px;
+}
+
+.burger::after {
+	content: '';
+	display: block;
+	background-color: var(--white-color);
+	width: 20px;
+	height: 2px;
+}

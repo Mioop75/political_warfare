@@ -1,0 +1,8 @@
+.arrow {
+	width: 20px;
+	height: 20px;
+}
+
+.arrow path {
+	stroke: var(--white-color);
+}

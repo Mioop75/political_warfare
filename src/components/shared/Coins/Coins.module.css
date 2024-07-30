@@ -1,0 +1,14 @@
+.coin {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.img {
+	width: 24px;
+	height: 24px;
+}
+
+.text {
+	line-height: 19.2px;
+}

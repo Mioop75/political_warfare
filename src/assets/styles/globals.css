@@ -1,0 +1,21 @@
+:root {
+	--bg-color: #28295e;
+	--bg-dark-color: #1f203f;
+	--white-color: #fff;
+	--gray-color: #bcbdc8;
+	--blue-color: #3c3d72;
+}
+
+body {
+	font-family: 'Gilroy';
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 22.4px;
+	background: linear-gradient(100deg, #212349 0%, #292a63 100%);
+	color: var(--white-color);
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+}

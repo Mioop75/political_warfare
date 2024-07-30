@@ -1,0 +1,29 @@
+.btn {
+	font-size: 1rem;
+	font-weight: 800;
+	letter-spacing: -0.02rem;
+	line-height: 140%;
+	color: var(--white-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.2em;
+	outline: none;
+	border: none;
+	padding: 1em 1.9em;
+	border-radius: 12px;
+	background: linear-gradient(180deg, #6373f9 0%, #4c49ef 100%);
+	cursor: pointer;
+	transition: box-shadow 0.3s;
+}
+
+.btn:active {
+	box-shadow: 2px 7px 14px 0px #453a94 inset;
+}
+
+.btn:disabled {
+	background: var(--blue-color);
+	color: var(--gray-color);
+	cursor: default;
+	box-shadow: none;
+}
