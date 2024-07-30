@@ -5,5 +5,4 @@ export interface IInstructionItemComponent {
 	title: string;
 	description: string;
 	additionItem: ReactNode;
-	paginationActive: boolean;
 }

@@ -6,7 +6,7 @@ import { IOptionComponent } from './Option.interface';
 import styles from './Option.module.css';
 
 const Option = ({ option, onClick }: IOptionComponent) => {
-	const [isSelected, setIsSelected] = useState(false);
+	const [isSelected] = useState(false);
 
 	const handleClick =
 		(clickedValue: OptionType['value']): MouseEventHandler<HTMLLIElement> =>
