@@ -22,7 +22,7 @@ const Navbar = () => {
 				</svg>
 				<div className={styles.text}>Earn</div>
 			</Link>
-			<Link to="/improve" className={styles.item}>
+			<Link to="/improves" className={styles.item}>
 				<svg
 					width="25"
 					height="24"
