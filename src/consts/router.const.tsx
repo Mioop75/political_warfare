@@ -14,7 +14,7 @@ type Router = {
 export const routersWithAuthorization: Router[] = [
 	{
 		element: <HomePage />,
-		path: '/home',
+		path: '/',
 	},
 	{
 		element: <ProfilePage />,

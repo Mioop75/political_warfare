@@ -16,7 +16,7 @@ export default function Router() {
 				))}
 			</Route>
 			<Route path="/instructions" element={<InstructionsPage />} />
-			<Route path="*" element={<Navigate to={{ pathname: '/home' }} />} />
+			<Route path="*" element={<Navigate to={{ pathname: '/' }} />} />
 		</Routes>
 	);
 }
