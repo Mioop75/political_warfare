@@ -38,6 +38,57 @@ export default function ImprovesPage() {
 							<Coins count="+350" />
 						</div>
 					</Sheet>
+					<Sheet direction="column" className={styles.item}>
+						<div className={styles.item_row}>
+							<div className={styles.item_name}>
+								<img src={img1} alt="" />
+								<Text>Спорт</Text>
+							</div>
+							<Button className={styles.item_btn} disabled>
+								Купить 3.2K
+							</Button>
+						</div>
+						<div className={styles.item_row}>
+							<div className={styles.item_text}>
+								Необходимый уровень: <span>2</span>
+							</div>
+							<Coins count="+350" />
+						</div>
+					</Sheet>
+					<Sheet direction="column" className={styles.item}>
+						<div className={styles.item_row}>
+							<div className={styles.item_name}>
+								<img src={img1} alt="" />
+								<Text>Спорт</Text>
+							</div>
+							<Button className={styles.item_btn} disabled>
+								Купить 3.2K
+							</Button>
+						</div>
+						<div className={styles.item_row}>
+							<div className={styles.item_text}>
+								Необходимый уровень: <span>2</span>
+							</div>
+							<Coins count="+350" />
+						</div>
+					</Sheet>
+					<Sheet direction="column" className={styles.item}>
+						<div className={styles.item_row}>
+							<div className={styles.item_name}>
+								<img src={img1} alt="" />
+								<Text>Спорт</Text>
+							</div>
+							<Button className={styles.item_btn} disabled>
+								Купить 3.2K
+							</Button>
+						</div>
+						<div className={styles.item_row}>
+							<div className={styles.item_text}>
+								Необходимый уровень: <span>2</span>
+							</div>
+							<Coins count="+350" />
+						</div>
+					</Sheet>
 				</div>
 			</div>
 		</div>

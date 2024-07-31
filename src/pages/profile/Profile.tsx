@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ArrowIcon from '../../components/shared/ArrowIcon/ArrowIcon';
 import Burger from '../../components/shared/Burger/Burger';
 import LevelBar from '../../components/shared/LevelBar/LevelBar';
@@ -13,7 +14,9 @@ export default function ProfilePage() {
 		<div>
 			<div className={styles.container}>
 				<div className={styles.row}>
-					<ArrowIcon direction="left" />
+					<Link to="/">
+						<ArrowIcon direction="left" />
+					</Link>
 					<Text>Профиль</Text>
 					<Burger />
 				</div>
