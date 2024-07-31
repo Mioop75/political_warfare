@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import Sheet from '../../ui/Sheet/Sheet';
 import Avatar from '../Avatar/Avatar';
 import Burger from '../Burger/Burger';
 import LevelBar from '../LevelBar/LevelBar';
@@ -6,9 +8,11 @@ import styles from './Profile.module.css';
 
 const Profile = () => {
 	return (
-		<div className={styles.profile}>
+		<Sheet className={styles.profile}>
 			<div className={styles.firstItem}>
-				<Avatar className={styles.avatar} />
+				<Link to="/profile" className={styles.avatar}>
+					<Avatar />
+				</Link>
 				<LevelBar />
 			</div>
 			<ProfitWithTitle
@@ -17,7 +21,7 @@ const Profile = () => {
 				count={'0'}
 			/>
 			<Burger />
-		</div>
+		</Sheet>
 	);
 };
 

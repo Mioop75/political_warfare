@@ -1,10 +1,11 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
+import Sheet from '../../components/ui/Sheet/Sheet';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
 	return (
-		<div className={styles.navbar}>
+		<Sheet className={styles.navbar}>
 			<Link to="/home" className={clsx(styles.item, styles['item-active'])}>
 				<svg
 					width="24"
@@ -79,7 +80,7 @@ const Navbar = () => {
 
 				<div className={styles.text}>Quests</div>
 			</Link>
-		</div>
+		</Sheet>
 	);
 };
 

@@ -3,10 +3,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 16px;
+	gap: 10px;
 	margin: 0 auto 30px;
 	border-radius: 16px;
-	background-color: #1f203f;
 	padding: 10px;
 }
 

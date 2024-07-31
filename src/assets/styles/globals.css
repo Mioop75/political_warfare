@@ -14,8 +14,3 @@ body {
 	background: linear-gradient(100deg, #212349 0%, #292a63 100%);
 	color: var(--white-color);
 }
-
-.container {
-	max-width: 400px;
-	margin: 0 auto;
-}

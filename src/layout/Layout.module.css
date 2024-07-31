@@ -1,4 +1,6 @@
 .layout {
+	max-width: 920px;
+	margin: 0 auto;
 	position: relative;
-	padding: 40px 0;
+	padding: 40px 16px;
 }
