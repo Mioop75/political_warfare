@@ -1,9 +1,10 @@
+import clsx from 'clsx';
 import { ILevelBarComponent } from './LevelBar.interface';
 import styles from './LevelBar.module.css';
 
-const LevelBar = ({ min, max }: ILevelBarComponent) => {
+const LevelBar = ({ className, min, max }: ILevelBarComponent) => {
 	return (
-		<div className={styles.progress}>
+		<div className={clsx(className, styles.progress)}>
 			<div className={styles.progress_row}>
 				<div className={styles.level}>Lv.1</div>
 				<div className={styles.percent}>

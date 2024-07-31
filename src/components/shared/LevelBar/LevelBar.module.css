@@ -35,3 +35,10 @@
 	height: 6px;
 	background: linear-gradient(180deg, #6373f9 0%, #4c49ef 100%);
 }
+
+.sum {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #ffffffb2;
+}

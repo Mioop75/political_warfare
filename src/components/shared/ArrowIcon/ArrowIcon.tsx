@@ -1,12 +1,13 @@
+import clsx from 'clsx';
 import { IArrowIcon } from './ArrowIcon.interface';
 import styles from './ArrowIcon.module.css';
 
-const ArrowIcon = ({ direction = 'right' }: IArrowIcon) => {
+const ArrowIcon = ({ className, direction = 'right' }: IArrowIcon) => {
 	return (
 		<>
 			{direction === 'right' ? (
 				<svg
-					className={styles.arrow}
+					className={clsx(className, styles.arrow)}
 					width="20"
 					height="20"
 					viewBox="0 0 20 20"
@@ -23,7 +24,7 @@ const ArrowIcon = ({ direction = 'right' }: IArrowIcon) => {
 				</svg>
 			) : (
 				<svg
-					className={styles.arrow}
+					className={clsx(className, styles.arrow)}
 					width="20"
 					height="20"
 					viewBox="0 0 20 20"

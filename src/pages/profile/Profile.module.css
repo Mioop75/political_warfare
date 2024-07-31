@@ -1,0 +1,25 @@
+.container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 40px 16px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.profit {
+	margin-bottom: 10px;
+}
+
+.bar {
+	margin-bottom: 10px;
+}
+
+.btn {
+	width: 100%;
+	margin: 10px 0 20px;
+}

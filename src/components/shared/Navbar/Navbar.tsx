@@ -1,11 +1,12 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
-import Sheet from '../../components/ui/Sheet/Sheet';
+import Sheet from '../../ui/Sheet/Sheet';
+import { INavbarComponent } from './Navbar.interface';
 import styles from './Navbar.module.css';
 
-const Navbar = () => {
+const Navbar = ({ color = 'dark' }: INavbarComponent) => {
 	return (
-		<Sheet className={styles.navbar}>
+		<Sheet color={color} className={styles.navbar}>
 			<Link to="/home" className={clsx(styles.item, styles['item-active'])}>
 				<svg
 					width="24"

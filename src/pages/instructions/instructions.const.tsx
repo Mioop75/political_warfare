@@ -8,18 +8,13 @@ import instruction7 from '@/assets/images/instructions/instruction-7.png';
 import instruction8 from '@/assets/images/instructions/instruction-8.png';
 
 import { ReactNode } from 'react';
-import Select from '../../components/ui/Select/Select';
-
-const languages = [
-	{ title: 'Русский', value: 'rus' },
-	{ title: 'English', value: 'eng' },
-];
+import SelectLanguage from '../../components/shared/SelectLanguage/SelectLanguage';
 
 export const instructions: instructionType[] = [
 	{
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Выберите предпочитаемый язык из списка',
-		additionitem: <Select options={languages} mode="rows" selected="rus" />,
+		additionitem: <SelectLanguage />,
 		image: instruction1,
 	},
 	{

@@ -1,3 +1,13 @@
 .text {
 	letter-spacing: -0.02em;
 }
+
+.gray {
+	color: var(--gray-color);
+}
+
+.gradientBlue {
+	background: linear-gradient(180deg, #6373f9 0%, #4c49ef 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,50 @@
+.tabs {
+	margin-bottom: 20px;
+}
+
+.tabs_buttons {
+	display: flex;
+	background-color: var(--blue-color);
+	border-radius: 14px;
+	margin-bottom: 20px;
+}
+
+.tabs_buttons-btn {
+	width: 100%;
+
+	padding: 12px 16px;
+	border-radius: 14px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	color: var(--white-color);
+}
+
+.tabs_buttons-btn-active {
+	background: linear-gradient(180deg, #6373f9 0%, #4c49ef 100%);
+	padding: 16px 30px;
+}
+
+.tabs_items {
+	display: grid;
+	grid-template-columns: repeat(5, 76px);
+	gap: 6px;
+}
+
+.tabs_item {
+	height: 100px;
+	position: relative;
+}
+
+.tabs_item-img {
+	width: 118px;
+	height: 90px;
+}
+
+.tabs_item-lock {
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+	width: 24px;
+	height: 24px;
+}

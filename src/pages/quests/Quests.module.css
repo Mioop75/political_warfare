@@ -1,0 +1,39 @@
+.quests {
+	margin-bottom: 105px;
+}
+
+.title {
+	margin-bottom: 40px;
+}
+
+.text {
+	margin: 30px 0 10px;
+	text-align: center;
+}
+
+.item {
+	padding: 16px;
+	gap: 8px;
+}
+
+.item_row {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.item_img {
+	width: 60px;
+	height: 60px;
+}
+
+.item_text {
+	margin-bottom: 6px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 20px;
+}

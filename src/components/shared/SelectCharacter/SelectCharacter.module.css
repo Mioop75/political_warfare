@@ -1,0 +1,15 @@
+.character {
+	padding: 30px 20px 30px 20px;
+	border-radius: 40px 40px 0px 0px;
+	display: block;
+}
+
+.container {
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+.btn {
+	width: 100%;
+	margin-bottom: 20px;
+}

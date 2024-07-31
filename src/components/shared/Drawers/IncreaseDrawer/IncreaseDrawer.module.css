@@ -1,0 +1,22 @@
+.block {
+	text-align: center;
+}
+
+.img {
+	width: 169px;
+	height: 215px;
+	margin-bottom: -40px;
+	margin-top: -50px;
+}
+
+.title {
+	margin-bottom: 20px;
+}
+
+.text {
+	margin-bottom: 20px;
+}
+
+.btn {
+	width: 100%;
+}

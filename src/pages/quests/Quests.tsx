@@ -12,12 +12,12 @@ import styles from './Quests.module.css';
 
 export default function QuestsPage() {
 	return (
-		<div className="container">
+		<div className={styles.quests}>
 			<Profile />
 			<Title className={styles.title}>Не хватает монет?</Title>
 			<Sheet className={clsx(styles.gold, styles.item)}>
 				<div className={styles.item_row}>
-					<img src={img1} alt="" className={styles.item_img} />
+					<img src={img3} alt="" className={styles.item_img} />
 					<div>
 						<Text className={styles.item_text}>Ежедневная награда</Text>
 						<Coins count="+1M" />
@@ -26,28 +26,30 @@ export default function QuestsPage() {
 				<ArrowIcon />
 			</Sheet>
 			<Text className={styles.text}>Выполните несколько заданий</Text>
-			<Sheet className={styles.item}>
-				<div className={styles.item_row}>
-					<img src={img2} alt="" className={styles.item_img} />
-					<div>
-						<Text className={styles.item_text}>Пригласите 3 друзей</Text>
-						<Coins count="+25 000" />
+			<div className={styles.column}>
+				<Sheet className={styles.item}>
+					<div className={styles.item_row}>
+						<img src={img2} alt="" className={styles.item_img} />
+						<div>
+							<Text className={styles.item_text}>Пригласите 3 друзей</Text>
+							<Coins count="+25 000" />
+						</div>
 					</div>
-				</div>
-				<ArrowIcon />
-			</Sheet>
-			<Sheet className={styles.item}>
-				<div className={styles.item_row}>
-					<img src={img3} alt="" className={styles.item_img} />
-					<div>
-						<Text className={styles.item_text}>
-							Присоединяйтесь к нашему Telegram каналу
-						</Text>
-						<Coins count="+28 000" />
+					<ArrowIcon />
+				</Sheet>
+				<Sheet className={styles.item}>
+					<div className={styles.item_row}>
+						<img src={img1} alt="" className={styles.item_img} />
+						<div>
+							<Text className={styles.item_text}>
+								Присоединяйтесь к нашему Telegram каналу
+							</Text>
+							<Coins count="+28 000" />
+						</div>
 					</div>
-				</div>
-				<ArrowIcon />
-			</Sheet>
+					<ArrowIcon />
+				</Sheet>
+			</div>
 		</div>
 	);
 }

@@ -4,7 +4,6 @@ import bgImg from '@/assets/images/bg-home.png';
 import goldCoin from '@/assets/images/gold-coin.png';
 import trumpCharacter from '@/assets/images/trump/character_model_01.png';
 import Profile from '../../components/shared/Profile/Profile';
-import Drawer from '../../components/ui/Drawer/Drawer';
 import styles from './Home.module.css';
 
 export default function HomePage() {
@@ -24,7 +23,6 @@ export default function HomePage() {
 				<img src={energyIcon} alt="" className={styles.energy_img} />
 				<div className={styles.energy_text}>999/1000</div>
 			</div>
-			<Drawer>Hello world</Drawer>
 		</div>
 	);
 }
