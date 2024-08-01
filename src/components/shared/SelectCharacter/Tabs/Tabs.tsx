@@ -1,5 +1,5 @@
 import lockIcon from '@/assets/icons/lock.svg';
-import trump from '@/assets/images/trump/character_model_01.png';
+import trump from '@/assets/images/trump/character_model_01.svg';
 import clsx from 'clsx';
 import Sheet from '../../../ui/Sheet/Sheet';
 import styles from './Tabs.module.css';

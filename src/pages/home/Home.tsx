@@ -2,7 +2,7 @@ import coinIcon from '@/assets/icons/coin-icon.svg';
 import energyIcon from '@/assets/icons/energy.svg';
 import bgImg from '@/assets/images/bg-home.png';
 import goldCoin from '@/assets/images/gold-coin.png';
-import trumpCharacter from '@/assets/images/trump/character_model_01.png';
+import trumpCharacter from '@/assets/images/trump/character_model_01.svg';
 import Profile from '../../components/shared/Profile/Profile';
 import styles from './Home.module.css';
 
