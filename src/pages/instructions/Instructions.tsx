@@ -17,6 +17,7 @@ export default function InstructionsPage() {
 							<InstructionItem
 								key={instruction.id}
 								image={instruction.image}
+								imgStyles={instruction.imgStyles}
 								title={instruction.title}
 								description={instruction.description}
 								additionItem={instruction.additionitem}

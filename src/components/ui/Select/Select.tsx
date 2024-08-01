@@ -101,13 +101,22 @@ const Select = ({
 			</div>
 			<motion.nav initial={isOpen} animate={isOpen ? 'open' : 'closed'}>
 				<motion.ul className={styles.select} variants={menuVariants}>
-					{options.map(option => (
-						<Option
-							key={option.value}
-							option={option}
-							onClick={handleOptionClick}
-						/>
-					))}
+					{options.map(option =>
+						option.value === selectedOption?.value ? (
+							<Option
+								key={option.value}
+								option={option}
+								selected={true}
+								onClick={handleOptionClick}
+							/>
+						) : (
+							<Option
+								key={option.value}
+								option={option}
+								onClick={handleOptionClick}
+							/>
+						)
+					)}
 				</motion.ul>
 			</motion.nav>
 		</div>

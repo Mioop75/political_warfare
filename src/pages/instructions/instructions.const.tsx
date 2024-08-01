@@ -7,7 +7,7 @@ import instruction6 from '@/assets/images/instructions/instruction-6.png';
 import instruction7 from '@/assets/images/instructions/instruction-7.png';
 import instruction8 from '@/assets/images/instructions/instruction-8.png';
 
-import { ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import SelectLanguage from '../../components/shared/SelectLanguage/SelectLanguage';
 
 export const instructions: instructionType[] = [
@@ -16,6 +16,7 @@ export const instructions: instructionType[] = [
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Выберите предпочитаемый язык из списка',
 		additionitem: <SelectLanguage />,
+		imgStyles: { top: '9%' },
 		image: instruction1,
 	},
 	{
@@ -23,6 +24,12 @@ export const instructions: instructionType[] = [
 		title: 'Нажимайте и зарабатывайте',
 		description:
 			'У кандидатов есть бюджет на выборы, выбирая кандидата, Вы зарабатываете ему бюджет для победы. У какого кандидата больше бюджет, тот и победит на выборах!',
+		imgStyles: {
+			position: 'static',
+			marginTop: '40px',
+			marginBottom: '20px',
+			boxShadow: 'none',
+		},
 		image: instruction2,
 	},
 	{
@@ -37,6 +44,9 @@ export const instructions: instructionType[] = [
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Прокачайте Вашего персонажа и пройдите весь путь',
 		image: instruction4,
+		imgStyles: {
+			boxShadow: 'none',
+		},
 	},
 	{
 		id: 5,
@@ -44,6 +54,7 @@ export const instructions: instructionType[] = [
 		description:
 			'Ваш опыт увеличивается с каждым улучшением. По мере повышения уровня растёт ваша прибыль за каждый тап и открываются новые возможности для улучшений',
 		image: instruction5,
+		imgStyles: { top: '-8%', boxShadow: 'none' },
 	},
 	{
 		id: 6,
@@ -51,6 +62,7 @@ export const instructions: instructionType[] = [
 		description:
 			'Увеличивайте свой доход, покупая улучшения для Вашего персонажа',
 		image: instruction6,
+		imgStyles: { top: 0 },
 	},
 	{
 		id: 7,
@@ -58,6 +70,7 @@ export const instructions: instructionType[] = [
 		description:
 			'Приглашайте друзей и получайте бонусы вместе. Вы и ваш друг получите монеты',
 		image: instruction7,
+		imgStyles: { top: 0 },
 	},
 	{
 		id: 8,
@@ -73,5 +86,6 @@ export type instructionType = {
 	title: string;
 	description: string;
 	image: string;
+	imgStyles?: CSSProperties;
 	additionitem?: ReactNode;
 };

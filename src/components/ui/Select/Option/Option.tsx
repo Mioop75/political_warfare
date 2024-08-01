@@ -1,13 +1,11 @@
 import CheckIcon from '@/assets/icons/check.svg';
 import clsx from 'clsx';
-import { MouseEventHandler, useState } from 'react';
+import { MouseEventHandler } from 'react';
 import { Option as OptionType } from '../Select.interface';
 import { IOptionComponent } from './Option.interface';
 import styles from './Option.module.css';
 
-const Option = ({ option, onClick }: IOptionComponent) => {
-	const [isSelected] = useState(false);
-
+const Option = ({ option, selected, onClick }: IOptionComponent) => {
 	const handleClick =
 		(clickedValue: OptionType): MouseEventHandler<HTMLLIElement> =>
 		() => {
@@ -16,12 +14,12 @@ const Option = ({ option, onClick }: IOptionComponent) => {
 
 	return (
 		<li
-			className={clsx(styles.option, { [styles.isSelected]: isSelected })}
+			className={clsx(styles.option, { [styles.isSelected]: selected })}
 			value={option.value}
 			onClick={handleClick(option)}
 		>
 			<div>{option.title}</div>
-			{isSelected && <img src={CheckIcon} alt="" />}
+			{selected && <img src={CheckIcon} alt="" />}
 		</li>
 	);
 };

@@ -8,6 +8,7 @@ import styles from './InstructionItem.module.css';
 
 const InstructionItem = ({
 	image,
+	imgStyles,
 	title,
 	description,
 	additionItem,
@@ -34,7 +35,7 @@ const InstructionItem = ({
 			transition={{ duration: 0.2 }}
 			className={styles.item}
 		>
-			<img src={image} alt="" className={styles.img} />
+			<img src={image} alt="" style={imgStyles} className={styles.img} />
 			<div className={styles.block}>
 				<div className={styles.container}>
 					<h2 className={styles.title}>{title}</h2>
