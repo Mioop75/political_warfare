@@ -16,7 +16,7 @@ export const instructions: instructionType[] = [
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Выберите предпочитаемый язык из списка',
 		additionitem: <SelectLanguage />,
-		imgStyles: { top: '3%' },
+		imgStyles: { top: '31%' },
 		image: instruction1,
 	},
 	{
