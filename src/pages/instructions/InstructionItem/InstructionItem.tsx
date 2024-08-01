@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../../components/ui/Button/Button';
+import { useAppDispatch } from '../../../hooks/useSelector';
+import { getUser } from '../../../store/user/user.slice';
 import { IInstructionItemComponent } from './InstructionItem.interface';
 import styles from './InstructionItem.module.css';
 
@@ -13,9 +15,11 @@ const InstructionItem = ({
 	setSelectedInstruction,
 }: IInstructionItemComponent) => {
 	const navigate = useNavigate();
+	const dispatch = useAppDispatch();
 
 	const navigateInstruction = () => {
 		if (selectedInstruction === 8) {
+			dispatch(getUser());
 			navigate('/home');
 		}
 
