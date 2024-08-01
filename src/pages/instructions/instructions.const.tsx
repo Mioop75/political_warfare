@@ -16,7 +16,7 @@ export const instructions: instructionType[] = [
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Выберите предпочитаемый язык из списка',
 		additionitem: <SelectLanguage />,
-		imgStyles: { top: '9%' },
+		imgStyles: { top: '3%' },
 		image: instruction1,
 	},
 	{
@@ -46,6 +46,7 @@ export const instructions: instructionType[] = [
 		image: instruction4,
 		imgStyles: {
 			boxShadow: 'none',
+			top: '-2%',
 		},
 	},
 	{
@@ -54,7 +55,7 @@ export const instructions: instructionType[] = [
 		description:
 			'Ваш опыт увеличивается с каждым улучшением. По мере повышения уровня растёт ваша прибыль за каждый тап и открываются новые возможности для улучшений',
 		image: instruction5,
-		imgStyles: { top: '-8%', boxShadow: 'none' },
+		imgStyles: { boxShadow: 'none', top: '23%' },
 	},
 	{
 		id: 6,
@@ -62,7 +63,6 @@ export const instructions: instructionType[] = [
 		description:
 			'Увеличивайте свой доход, покупая улучшения для Вашего персонажа',
 		image: instruction6,
-		imgStyles: { top: 0 },
 	},
 	{
 		id: 7,
@@ -70,7 +70,6 @@ export const instructions: instructionType[] = [
 		description:
 			'Приглашайте друзей и получайте бонусы вместе. Вы и ваш друг получите монеты',
 		image: instruction7,
-		imgStyles: { top: 0 },
 	},
 	{
 		id: 8,

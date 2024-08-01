@@ -10,8 +10,8 @@
 	display: block;
 	width: auto;
 	height: auto;
-	position: absolute;
-	top: 5%;
+	position: relative;
+	top: 15%;
 	box-shadow: 0px 12px 26px 0px rgba(21, 21, 41, 0.25),
 		0px 48px 48px 0px rgba(21, 21, 41, 0.22),
 		0px 108px 65px 0px rgba(21, 21, 41, 0.13),
