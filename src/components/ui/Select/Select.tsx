@@ -1,8 +1,28 @@
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import { MouseEventHandler, useEffect, useRef, useState } from 'react';
 import Option from './Option/Option';
 import { ISelectComponent, Option as OptionType } from './Select.interface';
 import styles from './Select.module.css';
+
+const menuVariants = {
+	open: (height = 'auto') => ({
+		display: 'block',
+		height,
+		opacity: 1,
+		transition: {
+			type: 'spring',
+		},
+	}),
+	closed: {
+		display: 'none',
+		height: 0,
+		opacity: 0,
+		transition: {
+			type: 'spring',
+		},
+	},
+};
 
 const Select = ({
 	options,
@@ -14,7 +34,7 @@ const Select = ({
 	onClose,
 }: ISelectComponent) => {
 	const [isOpen, setIsOpen] = useState(false);
-	const [selectedOption, setSelectedOption] = useState<string>('');
+	const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
 	const rootRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -37,7 +57,7 @@ const Select = ({
 		};
 	}, [isOpen, onClose]);
 
-	const handleOptionClick = (value: OptionType['value']) => {
+	const handleOptionClick = (value: OptionType) => {
 		setIsOpen(false);
 		setSelectedOption(value);
 		onChange?.(value);
@@ -74,13 +94,13 @@ const Select = ({
 							</svg>
 						</div>
 						<div className={styles.placeholder}>
-							{selectedOption || placeholder}
+							{selectedOption?.title || placeholder}
 						</div>
 					</button>
 				</div>
 			</div>
-			{isOpen && (
-				<ul className={styles.select}>
+			<motion.nav initial={isOpen} animate={isOpen ? 'open' : 'closed'}>
+				<motion.ul className={styles.select} variants={menuVariants}>
 					{options.map(option => (
 						<Option
 							key={option.value}
@@ -88,8 +108,8 @@ const Select = ({
 							onClick={handleOptionClick}
 						/>
 					))}
-				</ul>
-			)}
+				</motion.ul>
+			</motion.nav>
 		</div>
 	);
 };

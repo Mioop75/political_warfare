@@ -3,6 +3,10 @@
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	right: 0;
 }
 
 .pagination_item {
@@ -12,6 +16,7 @@
 	position: relative;
 	z-index: 2;
 	border-radius: 13px;
+	cursor: pointer;
 }
 
 .pagination_item-circle {
@@ -19,6 +24,7 @@
 	height: 8px;
 	background-color: var(--blue-color);
 	border-radius: 13px;
+	transition: all 0.3s;
 }
 
 .pagination_item-active {

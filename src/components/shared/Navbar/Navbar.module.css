@@ -14,13 +14,13 @@
 	border-radius: 10px;
 }
 
-.icon {
+svg {
 	width: 24px;
 	height: 24px;
 	margin-bottom: 2px;
 }
 
-.icon path {
+svg path {
 	fill: var(--gray-color);
 }
 
@@ -37,7 +37,7 @@
 	color: var(--white-color);
 }
 
-.item-active .icon path,
-.item-active .icon rect {
+.item-active svg path,
+.item-active svg rect {
 	fill: var(--white-color);
 }

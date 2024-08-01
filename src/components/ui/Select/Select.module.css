@@ -4,7 +4,7 @@
 
 .selectBtn_wrapper {
 	position: relative;
-	padding: 6px;
+	transition: all 0.3s;
 }
 
 .btn {
@@ -30,6 +30,10 @@
 .placeholder {
 	line-height: 22.4px;
 	letter-spacing: -2%;
+}
+
+.wrapper[data-is-active='true'] .selectBtn_wrapper {
+	padding: 6px;
 }
 
 .wrapper[data-is-active='true'] .arrow {

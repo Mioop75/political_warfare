@@ -12,47 +12,55 @@ import SelectLanguage from '../../components/shared/SelectLanguage/SelectLanguag
 
 export const instructions: instructionType[] = [
 	{
+		id: 1,
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Выберите предпочитаемый язык из списка',
 		additionitem: <SelectLanguage />,
 		image: instruction1,
 	},
 	{
+		id: 2,
 		title: 'Нажимайте и зарабатывайте',
 		description:
 			'У кандидатов есть бюджет на выборы, выбирая кандидата, Вы зарабатываете ему бюджет для победы. У какого кандидата больше бюджет, тот и победит на выборах!',
 		image: instruction2,
 	},
 	{
+		id: 3,
 		title: 'Нажимайте и зарабатывайте',
 		description:
 			'Вы можете нажимать на экран и зарабатывать монеты, применяя при этом продуманные стратегии',
 		image: instruction3,
 	},
 	{
+		id: 4,
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Прокачайте Вашего персонажа и пройдите весь путь',
 		image: instruction4,
 	},
 	{
+		id: 5,
 		title: 'Нажимайте и зарабатывайте',
 		description:
 			'Ваш опыт увеличивается с каждым улучшением. По мере повышения уровня растёт ваша прибыль за каждый тап и открываются новые возможности для улучшений',
 		image: instruction5,
 	},
 	{
+		id: 6,
 		title: 'Нажимайте и зарабатывайте',
 		description:
 			'Увеличивайте свой доход, покупая улучшения для Вашего персонажа',
 		image: instruction6,
 	},
 	{
+		id: 7,
 		title: 'Нажимайте и зарабатывайте',
 		description:
 			'Приглашайте друзей и получайте бонусы вместе. Вы и ваш друг получите монеты',
 		image: instruction7,
 	},
 	{
+		id: 8,
 		title: 'Нажимайте и зарабатывайте',
 		description:
 			'Используйте монеты для получения AirDrop при листинге токенов',
@@ -60,7 +68,8 @@ export const instructions: instructionType[] = [
 	},
 ];
 
-type instructionType = {
+export type instructionType = {
+	id: number;
 	title: string;
 	description: string;
 	image: string;

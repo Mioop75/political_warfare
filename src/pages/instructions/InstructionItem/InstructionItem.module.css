@@ -1,3 +1,11 @@
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100vh;
+}
+
 .img {
 	width: auto;
 	height: auto;
@@ -29,11 +37,9 @@
 	line-height: 32px;
 	text-align: center;
 	margin-bottom: 30px;
-	padding: 0 6px;
 }
 
 .text {
-	padding: 0 6px;
 	margin-bottom: 30px;
 	letter-spacing: 0.02em;
 }

@@ -6,7 +6,7 @@ const SelectLanguage = () => {
 		{ title: 'English', value: 'eng' },
 	];
 
-	return <Select options={languages} mode="rows" selected="rus" />;
+	return <Select options={languages} mode="rows" selected={languages[0]} />;
 };
 
 export default SelectLanguage;

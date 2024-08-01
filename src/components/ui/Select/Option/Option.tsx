@@ -9,7 +9,7 @@ const Option = ({ option, onClick }: IOptionComponent) => {
 	const [isSelected] = useState(false);
 
 	const handleClick =
-		(clickedValue: OptionType['value']): MouseEventHandler<HTMLLIElement> =>
+		(clickedValue: OptionType): MouseEventHandler<HTMLLIElement> =>
 		() => {
 			onClick(clickedValue);
 		};
@@ -18,7 +18,7 @@ const Option = ({ option, onClick }: IOptionComponent) => {
 		<li
 			className={clsx(styles.option, { [styles.isSelected]: isSelected })}
 			value={option.value}
-			onClick={handleClick(option.value)}
+			onClick={handleClick(option)}
 		>
 			<div>{option.title}</div>
 			{isSelected && <img src={CheckIcon} alt="" />}

@@ -2,9 +2,9 @@ export interface ISelectComponent {
 	options: Option[];
 	placeholder?: string;
 	mode?: 'rows' | 'cells';
-	selected?: string;
+	selected?: Option;
 	className?: string;
-	onChange?: (selected: Option['value']) => void;
+	onChange?: (selected: Option) => void;
 	onClose?: () => void;
 }
 
