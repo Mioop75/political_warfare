@@ -10,28 +10,30 @@ export default function InstructionsPage() {
 
 	return (
 		<div className={styles.instruction}>
-			<AnimatePresence mode="wait">
-				{instructions.map(
-					instruction =>
-						selectedInstruction === instruction.id && (
-							<InstructionItem
-								key={instruction.id}
-								image={instruction.image}
-								imgStyles={instruction.imgStyles}
-								title={instruction.title}
-								description={instruction.description}
-								additionItem={instruction.additionitem}
-								selectedInstruction={selectedInstruction}
-								setSelectedInstruction={setSelectedInstruction}
-							/>
-						)
-				)}
-			</AnimatePresence>
-			<Pagination
-				items={instructions}
-				paginationActive={selectedInstruction}
-				setSelectedInstruction={setSelectedInstruction}
-			/>
+			<div className={styles.item}>
+				<AnimatePresence mode="wait">
+					{instructions.map(
+						instruction =>
+							selectedInstruction === instruction.id && (
+								<InstructionItem
+									key={instruction.id}
+									image={instruction.image}
+									imgStyles={instruction.imgStyles}
+									title={instruction.title}
+									description={instruction.description}
+									additionItem={instruction.additionitem}
+									selectedInstruction={selectedInstruction}
+									setSelectedInstruction={setSelectedInstruction}
+								/>
+							)
+					)}
+				</AnimatePresence>
+				<Pagination
+					items={instructions}
+					paginationActive={selectedInstruction}
+					setSelectedInstruction={setSelectedInstruction}
+				/>
+			</div>
 		</div>
 	);
 }

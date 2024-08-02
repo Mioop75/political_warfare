@@ -16,7 +16,6 @@ export const instructions: instructionType[] = [
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Выберите предпочитаемый язык из списка',
 		additionitem: <SelectLanguage />,
-		imgStyles: { top: '31%' },
 		image: instruction1,
 	},
 	{
@@ -25,10 +24,9 @@ export const instructions: instructionType[] = [
 		description:
 			'У кандидатов есть бюджет на выборы, выбирая кандидата, Вы зарабатываете ему бюджет для победы. У какого кандидата больше бюджет, тот и победит на выборах!',
 		imgStyles: {
-			position: 'static',
-			marginTop: '40px',
-			marginBottom: '20px',
 			boxShadow: 'none',
+			top: '3%',
+			bottom: 0,
 		},
 		image: instruction2,
 	},
@@ -46,7 +44,8 @@ export const instructions: instructionType[] = [
 		image: instruction4,
 		imgStyles: {
 			boxShadow: 'none',
-			top: '-2%',
+			// top: '-5%',
+			bottom: '40%',
 		},
 	},
 	{
@@ -55,7 +54,10 @@ export const instructions: instructionType[] = [
 		description:
 			'Ваш опыт увеличивается с каждым улучшением. По мере повышения уровня растёт ваша прибыль за каждый тап и открываются новые возможности для улучшений',
 		image: instruction5,
-		imgStyles: { boxShadow: 'none', top: '23%' },
+		imgStyles: {
+			boxShadow: 'none',
+			// top: '23%'
+		},
 	},
 	{
 		id: 6,
