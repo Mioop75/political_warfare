@@ -1,7 +1,7 @@
 import { AnimatePresence, motion, wrap } from 'framer-motion';
 import { useState } from 'react';
-import ArrowIcon from '../../ArrowIcon/ArrowIcon';
-import { trumpImages } from '../characters-image';
+import ArrowIcon from '../../../ArrowIcon/ArrowIcon';
+import { trumpImages } from '../../characters';
 import styles from './Slider.module.css';
 
 const variants = {

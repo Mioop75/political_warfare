@@ -52,6 +52,7 @@
 	gap: 10px;
 	justify-content: space-between;
 	margin-bottom: 10px;
+	margin-top: auto;
 }
 
 .actions_invite {

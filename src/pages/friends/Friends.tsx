@@ -11,39 +11,41 @@ import styles from './Friends.module.css';
 
 export default function FriendsPage() {
 	return (
-		<div className="container">
-			<Profile />
-			<Title className={styles.title}>Пригласите друзей!</Title>
-			<Text className={styles.text}>Вы и Ваш друг полчите бонусы</Text>
-			<Sheet direction="column" className={styles.item}>
-				<div className={styles.item_row}>
-					<img src={gift1} alt="" className={styles.item_img} />
-					<Text className={styles.item_text}>Пригласить друга</Text>
-				</div>
-				<div className={styles.item_row}>
-					<Coins count="+5 000" />
-					<div className={styles.item_info}>для вас и вашего друга</div>
-				</div>
-			</Sheet>
-			<Sheet direction="column" className={styles.item}>
-				<div className={styles.item_row}>
-					<img src={gift2} alt="" className={styles.item_img} />
-					<Text className={styles.item_text}>
-						Пригласить друга с Telegram Premium
-					</Text>
-				</div>
-				<div className={styles.item_row}>
-					<Coins count="+25 000" />
-					<div className={styles.item_info}>для вас и вашего друга</div>
-				</div>
-			</Sheet>
-			<Text className={styles['text-list']}>Список ваших друзей</Text>
-			<div className={styles.users}>
-				<Sheet className={styles.notFound}>Вы ещё никого не пригласили</Sheet>
-				{/* <Sheet className={styles.user}>
+		<>
+			<div className="container">
+				<Profile />
+				<Title className={styles.title}>Пригласите друзей!</Title>
+				<Text className={styles.text}>Вы и Ваш друг полчите бонусы</Text>
+				<Sheet direction="column" className={styles.item}>
+					<div className={styles.item_row}>
+						<img src={gift1} alt="" className={styles.item_img} />
+						<Text className={styles.item_text}>Пригласить друга</Text>
+					</div>
+					<div className={styles.item_row}>
+						<Coins count="+5 000" />
+						<div className={styles.item_info}>для вас и вашего друга</div>
+					</div>
+				</Sheet>
+				<Sheet direction="column" className={styles.item}>
+					<div className={styles.item_row}>
+						<img src={gift2} alt="" className={styles.item_img} />
+						<Text className={styles.item_text}>
+							Пригласить друга с Telegram Premium
+						</Text>
+					</div>
+					<div className={styles.item_row}>
+						<Coins count="+25 000" />
+						<div className={styles.item_info}>для вас и вашего друга</div>
+					</div>
+				</Sheet>
+				<Text className={styles['text-list']}>Список ваших друзей</Text>
+				<div className={styles.users}>
+					<Sheet className={styles.notFound}>Вы ещё никого не пригласили</Sheet>
+					{/* <Sheet className={styles.user}>
 					<Avatar />
 					<div className={styles.user_text}>@username</div>
 				</Sheet> */}
+				</div>
 			</div>
 			<div className={styles.actions}>
 				<Button className={styles.actions_invite}>Пригласить друга</Button>
@@ -51,6 +53,6 @@ export default function FriendsPage() {
 					<img src={linkIcon} alt="" />
 				</Button>
 			</div>
-		</div>
+		</>
 	);
 }

@@ -11,13 +11,74 @@ import trump4 from '@/assets/images/trump/character_model_04.svg';
 import trump5 from '@/assets/images/trump/character_model_05.svg';
 import trump6 from '@/assets/images/trump/character_model_06.svg';
 
-export const trumpImages = [trump1, trump2, trump3, trump4, trump5, trump6];
-
-export const camalaImages = [
-	camala1,
-	camala2,
-	camala3,
-	camala4,
-	camala5,
-	camala6,
+export const trumpImages: ICharacter[] = [
+	{
+		id: 1,
+		img: trump1,
+		lock: false,
+	},
+	{
+		id: 2,
+		img: trump2,
+		lock: true,
+	},
+	{
+		id: 3,
+		img: trump3,
+		lock: true,
+	},
+	{
+		id: 4,
+		img: trump4,
+		lock: true,
+	},
+	{
+		id: 5,
+		img: trump5,
+		lock: true,
+	},
+	{
+		id: 6,
+		img: trump6,
+		lock: true,
+	},
 ];
+
+export const camalaImages: ICharacter[] = [
+	{
+		id: 1,
+		img: camala1,
+		lock: false,
+	},
+	{
+		id: 2,
+		img: camala2,
+		lock: true,
+	},
+	{
+		id: 3,
+		img: camala3,
+		lock: true,
+	},
+	{
+		id: 4,
+		img: camala4,
+		lock: true,
+	},
+	{
+		id: 5,
+		img: camala5,
+		lock: true,
+	},
+	{
+		id: 6,
+		img: camala6,
+		lock: true,
+	},
+];
+
+export interface ICharacter {
+	id: number;
+	img: string;
+	lock: boolean;
+}

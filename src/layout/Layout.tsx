@@ -21,12 +21,8 @@ const Layout = () => {
 			exit={{ y: -10, opacity: 0 }}
 			className={styles.layout}
 		>
-			<main>
-				<Outlet />
-			</main>
-			<div id="footer">
-				<Navbar />
-			</div>
+			<Outlet />
+			<Navbar />
 		</motion.div>
 	);
 };

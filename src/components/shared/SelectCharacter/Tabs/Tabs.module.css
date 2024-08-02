@@ -27,7 +27,7 @@
 
 .tabs_items {
 	display: grid;
-	grid-template-columns: repeat(5, 76px);
+	grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
 	gap: 6px;
 }
 
