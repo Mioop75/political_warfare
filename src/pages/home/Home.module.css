@@ -24,6 +24,7 @@
 .coins_img {
 	width: 40px;
 	height: 40px;
+	position: relative;
 }
 
 .coins_text {
@@ -46,6 +47,7 @@
 	height: 362px;
 	margin: 0 auto;
 	user-select: none;
+	z-index: -1;
 }
 
 .click_bg {
