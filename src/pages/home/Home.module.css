@@ -40,6 +40,12 @@
 	max-width: 285px;
 	margin: 0 auto 62px;
 	z-index: 1;
+	transition: all 0.3s;
+}
+
+.tap {
+	font-weight: 700;
+	font-size: 32px;
 }
 
 .click_character {
