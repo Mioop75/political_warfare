@@ -10,7 +10,7 @@ const modalSlice = createSlice({
 	initialState,
 	reducers: {
 		openModal(state, actions) {
-			state.nameModal = !state.nameModal ? actions.payload : null;
+			state.nameModal = actions.payload;
 		},
 
 		closeAllModals(state) {

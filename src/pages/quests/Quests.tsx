@@ -9,7 +9,7 @@ import Sheet from '../../components/ui/Sheet/Sheet';
 import Text from '../../components/ui/Text/Text';
 import Title from '../../components/ui/Title/Title';
 import { useAppDispatch } from '../../hooks/useSelector';
-import { openModal } from '../../store/modal/modal.slice';
+import { openDrawer } from '../../store/drawer/drawer.slice';
 import styles from './Quests.module.css';
 
 export default function QuestsPage() {
@@ -21,7 +21,7 @@ export default function QuestsPage() {
 			<Title className={styles.title}>Не хватает монет?</Title>
 			<div
 				className={styles.gold_wrapperBtn}
-				onClick={() => dispatch(openModal('invitedFriend'))}
+				onClick={() => dispatch(openDrawer('dailReward'))}
 			>
 				<div className={styles.gold_wrapper}>
 					<Sheet className={clsx(styles.item, styles.gold)}>

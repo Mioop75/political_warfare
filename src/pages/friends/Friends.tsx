@@ -7,9 +7,13 @@ import Button from '../../components/ui/Button/Button';
 import Sheet from '../../components/ui/Sheet/Sheet';
 import Text from '../../components/ui/Text/Text';
 import Title from '../../components/ui/Title/Title';
+import { useAppDispatch } from '../../hooks/useSelector';
+import { openModal } from '../../store/modal/modal.slice';
 import styles from './Friends.module.css';
 
 export default function FriendsPage() {
+	const dispatch = useAppDispatch();
+
 	return (
 		<>
 			<div className="container">
@@ -48,7 +52,12 @@ export default function FriendsPage() {
 				</div>
 			</div>
 			<div className={styles.actions}>
-				<Button className={styles.actions_invite}>Пригласить друга</Button>
+				<Button
+					className={styles.actions_invite}
+					onClick={() => dispatch(openModal('invitedFriend'))}
+				>
+					Пригласить друга
+				</Button>
 				<Button className={styles.actions_btnLink}>
 					<img src={linkIcon} alt="" />
 				</Button>
