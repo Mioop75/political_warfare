@@ -11,10 +11,12 @@ const modalSlice = createSlice({
 	reducers: {
 		openModal(state, actions) {
 			state.nameModal = actions.payload;
+			document.body.style.overflow = 'hidden';
 		},
 
 		closeAllModals(state) {
 			state.nameModal = null;
+			document.body.style.overflow = 'auto';
 		},
 	},
 });

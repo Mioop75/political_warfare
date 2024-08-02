@@ -11,10 +11,12 @@ const drawerSlice = createSlice({
 	reducers: {
 		openDrawer(state, actions) {
 			state.nameDrawer = !state.nameDrawer ? actions.payload : null;
+			document.body.style.overflow = 'hidden';
 		},
 
 		closeAllDrawers(state) {
 			state.nameDrawer = null;
+			document.body.style.overflow = 'auto';
 		},
 	},
 });

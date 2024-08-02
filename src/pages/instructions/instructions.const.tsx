@@ -44,7 +44,6 @@ export const instructions: instructionType[] = [
 		image: instruction4,
 		imgStyles: {
 			boxShadow: 'none',
-			// top: '-5%',
 			bottom: '40%',
 		},
 	},
