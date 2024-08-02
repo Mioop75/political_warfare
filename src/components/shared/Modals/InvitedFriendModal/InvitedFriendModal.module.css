@@ -1,0 +1,29 @@
+.img {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin-bottom: 6px;
+	margin: 0 auto;
+}
+
+.text {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.info {
+	line-height: 19.2px;
+	color: var(--gray-color);
+}
+
+.btn {
+	width: 100%;
+}

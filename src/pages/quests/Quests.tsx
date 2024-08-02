@@ -8,14 +8,21 @@ import Profile from '../../components/shared/Profile/Profile';
 import Sheet from '../../components/ui/Sheet/Sheet';
 import Text from '../../components/ui/Text/Text';
 import Title from '../../components/ui/Title/Title';
+import { useAppDispatch } from '../../hooks/useSelector';
+import { openModal } from '../../store/modal/modal.slice';
 import styles from './Quests.module.css';
 
 export default function QuestsPage() {
+	const dispatch = useAppDispatch();
+
 	return (
 		<div className={styles.quests}>
 			<Profile />
 			<Title className={styles.title}>Не хватает монет?</Title>
-			<div className={styles.gold_wrapperBtn}>
+			<div
+				className={styles.gold_wrapperBtn}
+				onClick={() => dispatch(openModal('invitedFriend'))}
+			>
 				<div className={styles.gold_wrapper}>
 					<Sheet className={clsx(styles.item, styles.gold)}>
 						<div className={styles.item_row}>

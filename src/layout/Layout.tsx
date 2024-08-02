@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
+import Drawers from '../components/shared/Drawers/Drawers';
+import Modals from '../components/shared/Modals/Modals';
 import Navbar from '../components/shared/Navbar/Navbar';
 import { useAppSelector } from '../hooks/useDispatch';
 import { RootState } from '../store';
@@ -23,6 +25,8 @@ const Layout = () => {
 		>
 			<Outlet />
 			<Navbar />
+			<Modals />
+			<Drawers />
 		</motion.div>
 	);
 };

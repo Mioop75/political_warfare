@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import ArrowIcon from '../../components/shared/ArrowIcon/ArrowIcon';
 import Burger from '../../components/shared/Burger/Burger';
+import Drawers from '../../components/shared/Drawers/Drawers';
 import LevelBar from '../../components/shared/LevelBar/LevelBar';
+import Modals from '../../components/shared/Modals/Modals';
 import ProfitWithTitle from '../../components/shared/ProfitWithTitle/ProfitWithTitle';
 import SelectCharacter from '../../components/shared/SelectCharacter/SelectCharacter';
 import Button from '../../components/ui/Button/Button';
@@ -11,7 +13,7 @@ import styles from './Profile.module.css';
 
 export default function ProfilePage() {
 	return (
-		<div>
+		<>
 			<div className={styles.container}>
 				<div className={styles.row}>
 					<Link to="/">
@@ -32,6 +34,8 @@ export default function ProfilePage() {
 				<Button className={styles.btn}>Повысить уровень 20К</Button>
 			</div>
 			<SelectCharacter />
-		</div>
+			<Modals />
+			<Drawers />
+		</>
 	);
 }

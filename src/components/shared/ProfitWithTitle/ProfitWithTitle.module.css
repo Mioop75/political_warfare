@@ -28,4 +28,7 @@
 	padding: 1px;
 	background-color: #bcbdc866;
 	color: #252654;
+	outline: none;
+	border: none;
+	cursor: pointer;
 }
