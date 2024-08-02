@@ -20,7 +20,7 @@ const Product = ({
 	const buyProduct = () => {
 		setPurchasedProduct(true);
 
-		setTimeout(() => setPurchasedProduct(false), 3000);
+		setTimeout(() => setPurchasedProduct(false), 1000);
 	};
 
 	return (
