@@ -1,0 +1,15 @@
+.coins {
+	position: absolute;
+	right: 0;
+	right: 0;
+	transform: translateY(-68%);
+	overflow: hidden;
+	z-index: 0;
+}
+
+.coins img {
+	max-width: 195px;
+	width: 195px;
+	height: 314px;
+	user-select: none;
+}

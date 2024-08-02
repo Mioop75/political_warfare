@@ -8,3 +8,21 @@
 	gap: 20px;
 	border-radius: 40px 40px 0px 0px;
 }
+
+.closeBtn {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	position: absolute;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	right: 5%;
+	top: 1%;
+}
+
+.closeBtn svg {
+	max-width: 30px;
+	width: 30px;
+	height: 30px;
+}

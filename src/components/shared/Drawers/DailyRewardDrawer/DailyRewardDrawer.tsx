@@ -8,7 +8,7 @@ import styles from './DailyRewardDrawer.module.css';
 
 const DailyRewardDrawer = () => {
 	return (
-		<Drawer color="lighter">
+		<Drawer closeButton={true} color="lighter">
 			<Title className={styles.title}>Ваша ежедневная награда</Title>
 			<Text className={styles.text}>
 				Получайте монеты за ежедневный вход в игру без пропусков. Необходимо
@@ -35,6 +35,31 @@ const DailyRewardDrawer = () => {
 					<div className={styles.day}>День 4</div>
 					<img src={coinsimg} alt="" className={styles.img} />
 					<div className={styles.status}>5К</div>
+				</div>
+				<div className={clsx(styles.item, styles.disabled)}>
+					<div className={styles.day}>День 5</div>
+					<img src={coinsimg} alt="" className={styles.img} />
+					<div className={styles.status}>15К</div>
+				</div>
+				<div className={clsx(styles.item, styles.disabled)}>
+					<div className={styles.day}>День 6</div>
+					<img src={coinsimg} alt="" className={styles.img} />
+					<div className={styles.status}>25К</div>
+				</div>
+				<div className={clsx(styles.item, styles.disabled)}>
+					<div className={styles.day}>День 7</div>
+					<img src={coinsimg} alt="" className={styles.img} />
+					<div className={styles.status}>50К</div>
+				</div>
+				<div className={clsx(styles.item, styles.disabled)}>
+					<div className={styles.day}>День 8</div>
+					<img src={coinsimg} alt="" className={styles.img} />
+					<div className={styles.status}>100К</div>
+				</div>
+				<div className={clsx(styles.item, styles.disabled)}>
+					<div className={styles.day}>День 9</div>
+					<img src={coinsimg} alt="" className={styles.img} />
+					<div className={styles.status}>150К</div>
 				</div>
 			</div>
 			<Button>Забрать</Button>
