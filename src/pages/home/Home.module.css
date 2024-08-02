@@ -47,6 +47,7 @@
 	height: 362px;
 	margin: 0 auto;
 	user-select: none;
+	position: relative;
 	z-index: -1;
 }
 
