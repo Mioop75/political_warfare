@@ -1,7 +1,7 @@
-import { AnimatePresence, motion, wrap } from 'framer-motion';
+import testImg from '@/assets/images/trump/character_model_01.svg';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import ArrowIcon from '../../../ArrowIcon/ArrowIcon';
-import { trumpImages } from '../../characters';
 import styles from './Slider.module.css';
 
 const variants = {
@@ -39,8 +39,6 @@ const swipePower = (offset: number, velocity: number) => {
 const Slider = () => {
 	const [[page, direction], setPage] = useState([0, 0]);
 
-	const imageIndex = wrap(0, trumpImages.length, page);
-
 	const paginate = (newDirection: number) => {
 		setPage([page + newDirection, newDirection]);
 	};
@@ -54,7 +52,7 @@ const Slider = () => {
 				<motion.img
 					className={styles.img}
 					key={page}
-					src={trumpImages[imageIndex]}
+					src={testImg}
 					custom={direction}
 					variants={variants}
 					initial="enter"
