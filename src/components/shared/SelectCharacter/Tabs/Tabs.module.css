@@ -18,6 +18,8 @@
 	outline: none;
 	border: none;
 	color: var(--white-color);
+	cursor: pointer;
+	transition: all 0.3s;
 }
 
 .tabs_buttons-btn-active {

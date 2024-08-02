@@ -15,16 +15,20 @@ export default function QuestsPage() {
 		<div className={styles.quests}>
 			<Profile />
 			<Title className={styles.title}>Не хватает монет?</Title>
-			<Sheet className={clsx(styles.gold, styles.item)}>
-				<div className={styles.item_row}>
-					<img src={img3} alt="" className={styles.item_img} />
-					<div>
-						<Text className={styles.item_text}>Ежедневная награда</Text>
-						<Coins count="+1M" />
-					</div>
+			<div className={styles.gold_wrapperBtn}>
+				<div className={styles.gold_wrapper}>
+					<Sheet className={clsx(styles.item, styles.gold)}>
+						<div className={styles.item_row}>
+							<img src={img3} alt="" className={styles.item_img} />
+							<div>
+								<Text className={styles.item_text}>Ежедневная награда</Text>
+								<Coins count="+1M" />
+							</div>
+						</div>
+						<ArrowIcon />
+					</Sheet>
 				</div>
-				<ArrowIcon />
-			</Sheet>
+			</div>
 			<Text className={styles.text}>Выполните несколько заданий</Text>
 			<div className={styles.column}>
 				<Sheet className={styles.item}>

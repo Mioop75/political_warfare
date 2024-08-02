@@ -1,27 +1,39 @@
 import lockIcon from '@/assets/icons/lock.svg';
 import clsx from 'clsx';
+import { useState } from 'react';
 import Sheet from '../../../ui/Sheet/Sheet';
-import { trumpImages } from '../characters';
+import { charactersImage, ITab } from '../characters';
 import Slider from './Slider/Slider';
 import styles from './Tabs.module.css';
 
 const Tabs = () => {
+	const [tabId, setTabId] = useState(1);
+
+	const characters = charactersImage.find(({ id }) => id === tabId) as ITab;
+
 	return (
 		<div className={styles.tabs}>
-			<Slider />
+			<Slider images={characters.characters.map(({ img }) => img)} />
 			<div className={styles.tabs_buttons}>
 				<button
-					className={clsx(
-						styles['tabs_buttons-btn'],
-						styles['tabs_buttons-btn-active']
-					)}
+					className={clsx(styles['tabs_buttons-btn'], {
+						[styles['tabs_buttons-btn-active']]: tabId === 1,
+					})}
+					onClick={() => setTabId(1)}
 				>
 					Республиканцы
 				</button>
-				<button className={styles['tabs_buttons-btn']}>Демократы</button>
+				<button
+					className={clsx(styles['tabs_buttons-btn'], {
+						[styles['tabs_buttons-btn-active']]: tabId === 2,
+					})}
+					onClick={() => setTabId(2)}
+				>
+					Демократы
+				</button>
 			</div>
 			<div className={styles.tabs_items}>
-				{trumpImages.map(img => (
+				{characters.characters.map(img => (
 					<Sheet key={img.id} color="lighter" className={styles.tabs_item}>
 						<img src={img.img} alt="" className={styles['tabs_item-img']} />
 						{img.lock && (

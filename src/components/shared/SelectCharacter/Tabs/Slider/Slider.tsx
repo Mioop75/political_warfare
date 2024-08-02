@@ -1,13 +1,13 @@
-import testImg from '@/assets/images/trump/character_model_01.svg';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, wrap } from 'framer-motion';
 import { useState } from 'react';
 import ArrowIcon from '../../../ArrowIcon/ArrowIcon';
+import { ISliderComponent } from './Slider.interface';
 import styles from './Slider.module.css';
 
 const variants = {
 	enter: (direction: number) => {
 		return {
-			x: direction > 0 ? 1000 : -1000,
+			x: direction > 0 ? 200 : -500,
 			opacity: 0,
 		};
 	},
@@ -19,7 +19,7 @@ const variants = {
 	exit: (direction: number) => {
 		return {
 			zIndex: 0,
-			x: direction < 0 ? 1000 : -1000,
+			x: direction < 0 ? 200 : -1000,
 			opacity: 0,
 		};
 	},
@@ -36,8 +36,10 @@ const swipePower = (offset: number, velocity: number) => {
 	return Math.abs(offset) * velocity;
 };
 
-const Slider = () => {
+const Slider = ({ images }: ISliderComponent) => {
 	const [[page, direction], setPage] = useState([0, 0]);
+
+	const imageIndex = wrap(0, images.length, page);
 
 	const paginate = (newDirection: number) => {
 		setPage([page + newDirection, newDirection]);
@@ -52,7 +54,7 @@ const Slider = () => {
 				<motion.img
 					className={styles.img}
 					key={page}
-					src={testImg}
+					src={images[imageIndex]}
 					custom={direction}
 					variants={variants}
 					initial="enter"

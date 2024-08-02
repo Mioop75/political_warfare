@@ -11,71 +11,83 @@ import trump4 from '@/assets/images/trump/character_model_04.svg';
 import trump5 from '@/assets/images/trump/character_model_05.svg';
 import trump6 from '@/assets/images/trump/character_model_06.svg';
 
-export const trumpImages: ICharacter[] = [
+export const charactersImage: ITab[] = [
 	{
 		id: 1,
-		img: trump1,
-		lock: false,
+		characters: [
+			{
+				id: 1,
+				img: trump1,
+				lock: false,
+			},
+			{
+				id: 2,
+				img: trump2,
+				lock: true,
+			},
+			{
+				id: 3,
+				img: trump3,
+				lock: true,
+			},
+			{
+				id: 4,
+				img: trump4,
+				lock: true,
+			},
+			{
+				id: 5,
+				img: trump5,
+				lock: true,
+			},
+			{
+				id: 6,
+				img: trump6,
+				lock: true,
+			},
+		],
 	},
 	{
 		id: 2,
-		img: trump2,
-		lock: true,
-	},
-	{
-		id: 3,
-		img: trump3,
-		lock: true,
-	},
-	{
-		id: 4,
-		img: trump4,
-		lock: true,
-	},
-	{
-		id: 5,
-		img: trump5,
-		lock: true,
-	},
-	{
-		id: 6,
-		img: trump6,
-		lock: true,
+		characters: [
+			{
+				id: 1,
+				img: camala1,
+				lock: false,
+			},
+			{
+				id: 2,
+				img: camala2,
+				lock: true,
+			},
+			{
+				id: 3,
+				img: camala3,
+				lock: true,
+			},
+			{
+				id: 4,
+				img: camala4,
+				lock: true,
+			},
+			{
+				id: 5,
+				img: camala5,
+				lock: true,
+			},
+			{
+				id: 6,
+				img: camala6,
+				lock: true,
+			},
+		],
 	},
 ];
 
-export const camalaImages: ICharacter[] = [
-	{
-		id: 1,
-		img: camala1,
-		lock: false,
-	},
-	{
-		id: 2,
-		img: camala2,
-		lock: true,
-	},
-	{
-		id: 3,
-		img: camala3,
-		lock: true,
-	},
-	{
-		id: 4,
-		img: camala4,
-		lock: true,
-	},
-	{
-		id: 5,
-		img: camala5,
-		lock: true,
-	},
-	{
-		id: 6,
-		img: camala6,
-		lock: true,
-	},
-];
+export interface ITab {
+	id: number;
+	characters: ICharacter[];
+}
 
 export interface ICharacter {
 	id: number;

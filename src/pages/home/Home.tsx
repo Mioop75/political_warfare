@@ -18,6 +18,7 @@ export default function HomePage() {
 			<div className={styles.click}>
 				<img src={trumpCharacter} alt="" className={styles.click_character} />
 				<img src={goldCoin} alt="" className={styles.click_bg} />
+				<div className={styles.click_text}>Нажми на меня</div>
 			</div>
 			<div className={styles.energy}>
 				<img src={energyIcon} alt="" className={styles.energy_img} />
