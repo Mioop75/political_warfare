@@ -47,8 +47,8 @@
 	height: 362px;
 	margin: 0 auto;
 	user-select: none;
-	position: relative;
-	z-index: -1;
+	pointer-events: none;
+	z-index: 0;
 }
 
 .click_bg {
@@ -59,6 +59,7 @@
 	left: -16%;
 	z-index: -1;
 	animation: in 30s linear 0s infinite normal;
+	pointer-events: none;
 }
 
 .click_text {
