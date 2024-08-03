@@ -73,7 +73,7 @@ const AnimationCoins = () => {
 					<img src={coinIcon} alt="" />
 				</motion.div>
 				<motion.div
-					initial={{ y: 0, x: 0, opacity: 1 }}
+					initial={{ y: 0, x: 75, opacity: 1 }}
 					animate={{ y: -45, x: 75 }}
 					transition={{
 						x: { type: 'spring', stiffness: 300, damping: 30 },
