@@ -24,11 +24,12 @@ const Drawer = ({
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 				ref={ref}
+				className={styles.drawer}
 			>
 				<Sheet
 					color={color}
 					direction={direction}
-					className={clsx(className, styles.drawer)}
+					className={clsx(className, styles.box)}
 				>
 					{children}
 					{closeButton && (

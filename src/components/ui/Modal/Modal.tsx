@@ -15,7 +15,7 @@ const Modal = ({ className, children }: IModalComponent) => {
 			<motion.div
 				initial={{ y: -10, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
-				exit={{ y: -10, opacity: 0 }}
+				exit={{ y: 0, opacity: 0 }}
 				className={clsx(className, styles.modal)}
 				onClick={event => {
 					const { target } = event;

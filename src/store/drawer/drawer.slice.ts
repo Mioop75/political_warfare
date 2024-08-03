@@ -10,7 +10,7 @@ const drawerSlice = createSlice({
 	initialState,
 	reducers: {
 		openDrawer(state, actions) {
-			state.nameDrawer = !state.nameDrawer ? actions.payload : null;
+			state.nameDrawer = actions.payload;
 			document.body.style.overflow = 'hidden';
 		},
 

@@ -16,6 +16,10 @@ export const instructions: instructionType[] = [
 		title: 'Нажимайте и зарабатывайте',
 		description: 'Выберите предпочитаемый язык из списка',
 		additionitem: <SelectLanguage />,
+		imgStyles: {
+			width: '255px',
+			height: '552px',
+		},
 		image: instruction1,
 	},
 	{
@@ -24,6 +28,8 @@ export const instructions: instructionType[] = [
 		description:
 			'У кандидатов есть бюджет на выборы, выбирая кандидата, Вы зарабатываете ему бюджет для победы. У какого кандидата больше бюджет, тот и победит на выборах!',
 		imgStyles: {
+			width: '335px',
+			height: '361px',
 			boxShadow: 'none',
 			top: '3%',
 			bottom: 0,
@@ -36,6 +42,10 @@ export const instructions: instructionType[] = [
 		description:
 			'Вы можете нажимать на экран и зарабатывать монеты, применяя при этом продуманные стратегии',
 		image: instruction3,
+		imgStyles: {
+			width: '255px',
+			height: '552px',
+		},
 	},
 	{
 		id: 4,
@@ -43,6 +53,8 @@ export const instructions: instructionType[] = [
 		description: 'Прокачайте Вашего персонажа и пройдите весь путь',
 		image: instruction4,
 		imgStyles: {
+			width: '335px',
+			height: '389px',
 			boxShadow: 'none',
 			bottom: '40%',
 		},
@@ -54,8 +66,10 @@ export const instructions: instructionType[] = [
 			'Ваш опыт увеличивается с каждым улучшением. По мере повышения уровня растёт ваша прибыль за каждый тап и открываются новые возможности для улучшений',
 		image: instruction5,
 		imgStyles: {
+			width: '375px',
+			height: '788px',
+			bottom: '-2%',
 			boxShadow: 'none',
-			// top: '23%'
 		},
 	},
 	{
@@ -64,6 +78,10 @@ export const instructions: instructionType[] = [
 		description:
 			'Увеличивайте свой доход, покупая улучшения для Вашего персонажа',
 		image: instruction6,
+		imgStyles: {
+			width: '255px',
+			height: '552px',
+		},
 	},
 	{
 		id: 7,
@@ -71,6 +89,10 @@ export const instructions: instructionType[] = [
 		description:
 			'Приглашайте друзей и получайте бонусы вместе. Вы и ваш друг получите монеты',
 		image: instruction7,
+		imgStyles: {
+			width: '255px',
+			height: '552px',
+		},
 	},
 	{
 		id: 8,
@@ -78,6 +100,10 @@ export const instructions: instructionType[] = [
 		description:
 			'Используйте монеты для получения AirDrop при листинге токенов',
 		image: instruction8,
+		imgStyles: {
+			width: '255px',
+			height: '552px',
+		},
 	},
 ];
 
