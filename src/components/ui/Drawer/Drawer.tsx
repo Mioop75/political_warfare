@@ -21,7 +21,7 @@ const Drawer = ({
 		<AnimatePresence mode="wait">
 			<motion.div
 				initial={{ opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
+				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 				ref={ref}
 			>
