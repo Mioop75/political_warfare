@@ -1,0 +1,70 @@
+.loading {
+	background-image: url('@/assets/images/loading_image.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	padding-bottom: 81px;
+}
+
+.logo {
+	display: block;
+	width: 298px;
+	height: 134px;
+	margin: 0 auto 30px;
+}
+
+.progress {
+	padding: 0 20px;
+}
+
+.progress_info {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.bar {
+	padding: 5px;
+	position: relative;
+}
+
+.bar_wrapper {
+	position: relative;
+	background: linear-gradient(180deg, #6373f9 0%, #4c49ef 100%);
+	border-radius: 6px;
+}
+
+.bar::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	background: linear-gradient(
+		180deg,
+		rgba(99, 115, 249, 0.2) 0%,
+		rgba(76, 73, 239, 0.2) 100%
+	);
+}
+
+.box {
+	background-color: #ffffffb2;
+	width: 100%;
+	height: 16px;
+	border-radius: 100px;
+	position: relative;
+	z-index: 2;
+}
+
+.line {
+	height: 16px;
+	border-radius: 100px;
+	background: linear-gradient(180deg, #6373f9 0%, #4c49ef 100%);
+}
