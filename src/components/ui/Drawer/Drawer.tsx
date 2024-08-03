@@ -20,9 +20,9 @@ const Drawer = ({
 	return (
 		<AnimatePresence mode="wait">
 			<motion.div
-				initial={{ y: -10, opacity: 0 }}
+				initial={{ opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
-				exit={{ y: -10, opacity: 0 }}
+				exit={{ opacity: 0 }}
 				ref={ref}
 			>
 				<Sheet
