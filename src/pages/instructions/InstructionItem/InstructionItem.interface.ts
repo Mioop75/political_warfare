@@ -3,6 +3,7 @@ import { CSSProperties, Dispatch, ReactNode, SetStateAction } from 'react';
 export interface IInstructionItemComponent {
 	image: string;
 	imgStyles?: CSSProperties;
+	bgImg?: string;
 	title: string;
 	description: string;
 	additionItem: ReactNode;

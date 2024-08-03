@@ -19,7 +19,7 @@ export default function ImprovesPage() {
 			</Sheet>
 			<div>
 				{sections.map(section => (
-					<>
+					<div key={section.title}>
 						<Text className={styles.title}>{section.title}</Text>
 						<div>
 							{section.products.map(product => (
@@ -34,7 +34,7 @@ export default function ImprovesPage() {
 								/>
 							))}
 						</div>
-					</>
+					</div>
 				))}
 			</div>
 		</div>

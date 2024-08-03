@@ -17,7 +17,7 @@ export const sections: sectionType[] = [
 				disabled: false,
 			},
 			{
-				id: 1,
+				id: 2,
 				img: imgBody2,
 				title: 'Спорт',
 				sum: '3.2K',
@@ -26,7 +26,7 @@ export const sections: sectionType[] = [
 				disabled: true,
 			},
 			{
-				id: 1,
+				id: 3,
 				img: imgBody3,
 				title: 'Спорт',
 				sum: '3.2K',
@@ -35,7 +35,7 @@ export const sections: sectionType[] = [
 				disabled: true,
 			},
 			{
-				id: 1,
+				id: 4,
 				img: imgBody4,
 				title: 'Спорт',
 				sum: '3.2K',

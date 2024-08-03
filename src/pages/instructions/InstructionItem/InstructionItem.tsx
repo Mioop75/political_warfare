@@ -9,6 +9,7 @@ import styles from './InstructionItem.module.css';
 const InstructionItem = ({
 	image,
 	imgStyles,
+	bgImg,
 	title,
 	description,
 	additionItem,
@@ -35,6 +36,7 @@ const InstructionItem = ({
 			transition={{ duration: 0.2 }}
 			className={styles.item}
 		>
+			{bgImg && <img src={bgImg} alt="" className={styles.bg} />}
 			<img src={image} alt="" style={imgStyles} className={styles.img} />
 			<div className={styles.block}>
 				<div className={styles.container}>

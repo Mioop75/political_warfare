@@ -5,7 +5,14 @@
 	margin-bottom: 20px;
 }
 
+.wrapper {
+	width: 112px;
+	height: 255px;
+	position: relative;
+}
+
 .img {
+	position: absolute;
 	width: 112px;
 	height: 255px;
 }

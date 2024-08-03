@@ -1,4 +1,5 @@
 import instruction1 from '@/assets/images/instructions/instruction-1.png';
+import instructionBg2 from '@/assets/images/instructions/instruction-2-bg.png';
 import instruction2 from '@/assets/images/instructions/instruction-2.png';
 import instruction3 from '@/assets/images/instructions/instruction-3.png';
 import instruction4 from '@/assets/images/instructions/instruction-4.png';
@@ -35,6 +36,7 @@ export const instructions: instructionType[] = [
 			bottom: 0,
 		},
 		image: instruction2,
+		bgImg: instructionBg2,
 	},
 	{
 		id: 3,
@@ -112,6 +114,7 @@ export type instructionType = {
 	title: string;
 	description: string;
 	image: string;
+	bgImg?: string;
 	imgStyles?: CSSProperties;
 	additionitem?: ReactNode;
 };
