@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { useAppDispatch } from '../../../../hooks/useSelector';
+import { closeAllDrawers } from '../../../../store/drawer/drawer.slice';
 import Drawer from '../../../ui/Drawer/Drawer';
 import Sheet from '../../../ui/Sheet/Sheet';
 import Text from '../../../ui/Text/Text';
@@ -7,6 +10,8 @@ import SelectLanguage from '../../SelectLanguage/SelectLanguage';
 import styles from './SettingsDrawer.module.css';
 
 const SettingsDrawer = () => {
+	const dispatch = useAppDispatch();
+
 	return (
 		<Drawer className={styles.block}>
 			<Title align="center" className={styles.title}>
@@ -14,10 +19,12 @@ const SettingsDrawer = () => {
 			</Title>
 			<div className={styles.column}>
 				<SelectLanguage />
-				<Sheet className={styles.item} color="lighter">
-					<Text>Таблица лидеров</Text>
-					<ArrowIcon />
-				</Sheet>
+				<Link to="/table-leaders" onClick={() => dispatch(closeAllDrawers())}>
+					<Sheet className={styles.item} color="lighter">
+						<Text>Таблица лидеров</Text>
+						<ArrowIcon />
+					</Sheet>
+				</Link>
 				<Sheet className={styles.item} color="lighter">
 					<Text>Повторное обучение</Text>
 					<ArrowIcon />
