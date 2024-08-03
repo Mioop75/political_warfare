@@ -4,6 +4,15 @@
 	bottom: 0;
 	right: 0;
 	left: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.wrapper {
+	overflow-x: auto;
+	position: relative;
 }
 
 .box {
