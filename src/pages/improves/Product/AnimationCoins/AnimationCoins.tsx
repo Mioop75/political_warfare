@@ -28,9 +28,9 @@ const AnimationCoins = () => {
 				{ y: -12, x: 82 },
 				{ y: 0, x: 120 },
 			]);
-		}, 200);
+		}, 100);
 
-		if (a.length > 20) clearTimeout(time);
+		if (a.length > 50) clearTimeout(time);
 	}, [a]);
 
 	return (
