@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import AirDrop from '../pages/airDrop/AirDrop';
 import FriendsPage from '../pages/friends/Friends';
 import HomePage from '../pages/home/Home';
 import ImprovesPage from '../pages/improves/Improves';
@@ -32,6 +33,10 @@ export const routerWithLayout: Router[] = [
 	{
 		element: <TableLeadersPage />,
 		path: '/table-leaders',
+	},
+	{
+		element: <AirDrop />,
+		path: '/airDrop',
 	},
 ];
 

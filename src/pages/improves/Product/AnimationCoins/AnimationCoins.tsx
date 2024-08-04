@@ -40,10 +40,10 @@ const AnimationCoins = () => {
 					<motion.div
 						key={i}
 						initial={{ y: a.y, x: a.x, opacity: 1 }}
-						animate={{ y: -100, opacity: 0 }}
+						animate={{ y: -200, x: -100, opacity: 0 }}
 						transition={{
 							type: 'spring',
-							duration: 0.3,
+							duration: 5,
 							damping: 30,
 						}}
 						className={styles.img}

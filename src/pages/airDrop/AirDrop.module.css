@@ -1,0 +1,30 @@
+.airdrop {
+	margin-bottom: 30px;
+}
+
+.title {
+	margin-bottom: 10px;
+}
+
+.text {
+	margin-bottom: 30px;
+	color: var(--gray-color);
+	text-align: center;
+}
+
+.list_text {
+	margin-bottom: 10px;
+}
+
+.item {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 0;
+}
+
+.wrapper {
+	padding: 16px 20px;
+	color: var(--white-color);
+}

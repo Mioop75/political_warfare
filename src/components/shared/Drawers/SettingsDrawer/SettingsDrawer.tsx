@@ -29,10 +29,12 @@ const SettingsDrawer = () => {
 					<Text>Повторное обучение</Text>
 					<ArrowIcon />
 				</Sheet>
-				<Sheet className={styles.item} color="lighter">
-					<Text>Airdrop</Text>
-					<ArrowIcon />
-				</Sheet>
+				<Link to="/airDrop" onClick={() => dispatch(closeAllDrawers())}>
+					<Sheet className={styles.item} color="lighter">
+						<Text>Airdrop</Text>
+						<ArrowIcon />
+					</Sheet>
+				</Link>
 				<Sheet className={styles.item} color="lighter">
 					<Text>Подключить кошелёк</Text>
 					<Text color="gray">Скоро</Text>

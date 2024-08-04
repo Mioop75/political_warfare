@@ -6,3 +6,7 @@
 .arrow path {
 	stroke: var(--white-color);
 }
+
+.arrow path {
+	fill: none;
+}
