@@ -1,6 +1,6 @@
 .profit_title {
-	font-size: 14px;
-	letter-spacing: -0.41px;
+	font-size: 12px;
+	letter-spacing: -0.408px;
 	margin-bottom: 6px;
 	color: #ffffffb2;
 	text-align: center;
@@ -9,21 +9,23 @@
 .profit_row {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 10px;
 }
 
 .profit_icon {
-	width: 24px;
-	height: 24px;
+	width: 16px;
+	height: 16px;
 }
 
 .profit_question {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 24px;
-	height: 24px;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	line-height: 14.4px;
 	border-radius: 100px;
 	padding: 1px;
 	background-color: #bcbdc866;

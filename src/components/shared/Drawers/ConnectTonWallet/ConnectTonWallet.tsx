@@ -14,9 +14,8 @@ const ConnectTonWalletDrawer = () => {
 				Подключите свой криптокошелек. Если у вас его нет, создайте его через
 				ваш аккаунт в Telegram
 			</Text>
-			<Button className={styles.btn}>Подключить свой кошелёк TON</Button>
-			<Button disabled={true} className={styles.btn}>
-				Проверить
+			<Button className={styles.btn} disabled={true}>
+				Подключить свой кошелёк TON (скоро)
 			</Button>
 		</Drawer>
 	);

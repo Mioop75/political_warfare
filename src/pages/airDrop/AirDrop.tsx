@@ -1,39 +1,53 @@
-import ArrowIcon from '../../components/shared/ArrowIcon/ArrowIcon';
+import airdropBg from '@/assets/images/airdrop-bg.jpg';
 import Profile from '../../components/shared/Profile/Profile';
-import Sheet from '../../components/ui/Sheet/Sheet';
+import Button from '../../components/ui/Button/Button';
 import Text from '../../components/ui/Text/Text';
 import Title from '../../components/ui/Title/Title';
-import { useAppDispatch } from '../../hooks/useSelector';
-import { openDrawer } from '../../store/drawer/drawer.slice';
 import styles from './AirDrop.module.css';
 
 const AirDrop = () => {
-	const dispatch = useAppDispatch();
-
 	return (
 		<div className={styles.airdrop}>
 			<Profile />
+			<img src={airdropBg} alt="" className={styles.airdrop_bg} />
 			<Title className={styles.title}>AirDrop tasks</Title>
+			<Button disabled={true} className={styles.btn}>
+				Подключить свой кошелёк (скоро)
+			</Button>
 			<Text className={styles.text}>
 				Листинг уже отправлен. Задания будут отображены ниже. Выполните их,
 				чтобы принять участие в AirDrop
 			</Text>
-			<div className={styles.list}>
-				<Text className={styles.list_text}>Список заданий</Text>
-				<div className={styles.column}>
-					<button
-						className={styles.item}
-						onClick={() => dispatch(openDrawer('connectedTonWallet'))}
-					>
-						<Sheet className={styles.wrapper}>
-							<Text className={styles.item_text}>
-								Подключай свой кошелёк TON
-							</Text>
-							<ArrowIcon />
-						</Sheet>
-					</button>
-				</div>
-			</div>
+			<Text className={styles.text}>
+				Один из захватывающих этапов, который нас ожидает, — это значительный
+				токен аирдроп. Мы стремимся максимизировать ваши доходы.
+			</Text>
+			<Text className={styles.text}>
+				На данный момент мы можем сказать, что эти три игровых показателя будут
+				играть важную роль в определении распределения токенов:
+			</Text>
+			<ul className={styles.ul}>
+				<li>
+					<Text className={styles.text}>Прибыль в час</Text>
+				</li>
+				<li>
+					<Text className={styles.text}>
+						Общее количество монет, которые вы заработали за период
+					</Text>
+				</li>
+				<li>
+					<Text className={styles.text}>
+						Количество друзей, которых вы пригласили
+					</Text>
+				</li>
+				<li>
+					<Text className={styles.text}>
+						На данный момент самое важное — получать удовольствие от игры,
+						развивать своего персонажа и помогать нам развивать нашу экосистему!
+					</Text>
+				</li>
+			</ul>
+			<Button>Подписывайтесь на наш канал в TG</Button>
 		</div>
 	);
 };

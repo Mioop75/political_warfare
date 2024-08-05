@@ -1,7 +1,7 @@
 .container {
 	max-width: 920px;
 	margin: 0 auto;
-	padding: 40px 16px;
+	padding: 40px 16px 10px;
 }
 
 .row {
@@ -17,9 +17,4 @@
 
 .bar {
 	margin-bottom: 10px;
-}
-
-.btn {
-	width: 100%;
-	margin: 10px 0 20px;
 }

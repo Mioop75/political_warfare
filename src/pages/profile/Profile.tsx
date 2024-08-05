@@ -6,7 +6,6 @@ import LevelBar from '../../components/shared/LevelBar/LevelBar';
 import Modals from '../../components/shared/Modals/Modals';
 import ProfitWithTitle from '../../components/shared/ProfitWithTitle/ProfitWithTitle';
 import SelectCharacter from '../../components/shared/SelectCharacter/SelectCharacter';
-import Button from '../../components/ui/Button/Button';
 import Sheet from '../../components/ui/Sheet/Sheet';
 import Text from '../../components/ui/Text/Text';
 import styles from './Profile.module.css';
@@ -31,7 +30,6 @@ export default function ProfilePage() {
 					<ProfitWithTitle title="Деньги" count="15.3К" />
 				</Sheet>
 				<LevelBar className={styles.bar} min="0" max="30k" />
-				<Button className={styles.btn}>Повысить уровень 20К</Button>
 			</div>
 			<SelectCharacter />
 			<Modals />
