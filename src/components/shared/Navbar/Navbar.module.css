@@ -55,6 +55,7 @@ svg path {
 
 .item-active {
 	background: linear-gradient(180deg, #6373f9 0%, #4c49ef 100%);
+	padding: 10px;
 }
 
 .item-active .text {
