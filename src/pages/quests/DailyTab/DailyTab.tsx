@@ -4,12 +4,9 @@ import Coins from '../../../components/shared/Coins/Coins';
 import Sheet from '../../../components/ui/Sheet/Sheet';
 import Text from '../../../components/ui/Text/Text';
 import Title from '../../../components/ui/Title/Title';
-import { useAppDispatch } from '../../../hooks/useSelector';
 import styles from './DailyTab.module.css';
 
 const DailyTab = () => {
-	const dispatch = useAppDispatch();
-
 	return (
 		<div>
 			<Title className={styles.title}>Не хватает монет?</Title>
