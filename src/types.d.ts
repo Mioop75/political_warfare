@@ -1,5 +1,5 @@
 declare global {
 	interface Window {
-		telegram: any;
+		telegram: unknown;
 	}
 }
