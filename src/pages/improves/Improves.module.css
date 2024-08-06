@@ -1,3 +1,7 @@
+.improves {
+	padding-bottom: 30%;
+}
+
 .row {
 	display: flex;
 	justify-content: space-between;

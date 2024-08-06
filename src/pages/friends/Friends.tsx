@@ -15,7 +15,7 @@ export default function FriendsPage() {
 	const dispatch = useAppDispatch();
 
 	return (
-		<>
+		<div className={styles.friends}>
 			<div className="container">
 				<Profile />
 				<Title className={styles.title}>Пригласите друзей!</Title>
@@ -62,6 +62,6 @@ export default function FriendsPage() {
 					<img src={linkIcon} alt="" />
 				</Button>
 			</div>
-		</>
+		</div>
 	);
 }

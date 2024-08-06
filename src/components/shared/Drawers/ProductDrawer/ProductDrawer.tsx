@@ -19,7 +19,7 @@ const ProductDrawer = () => {
 		setTimeout(() => {
 			setPurchasedProduct(false);
 			dispatch(closeAllDrawers());
-		}, 2000);
+		}, 1000);
 	};
 
 	return (
