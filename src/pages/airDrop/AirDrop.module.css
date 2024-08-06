@@ -1,5 +1,5 @@
 .airdrop {
-	margin-bottom: 30px;
+	padding-bottom: 25%;
 	position: relative;
 }
 
@@ -16,6 +16,7 @@
 }
 
 .btn {
+	width: 100%;
 	margin-bottom: 10px;
 }
 

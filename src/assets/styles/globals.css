@@ -6,6 +6,12 @@
 	--blue-color: #3c3d72;
 }
 
+html,
+body,
+#root {
+	height: 100%;
+}
+
 body {
 	font-family: 'Gilroy';
 	font-weight: 500;

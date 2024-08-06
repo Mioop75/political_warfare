@@ -1,9 +1,6 @@
 .layout {
 	max-width: 375px;
-	margin: 0 auto 5px;
-	padding: 20px 16px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100vh;
+	margin: 0 auto;
+	padding: 10px 2px;
+	height: 100%;
 }

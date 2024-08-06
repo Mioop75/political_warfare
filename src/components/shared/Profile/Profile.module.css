@@ -1,6 +1,7 @@
 .profile {
-	gap: 10px;
+	gap: 5px;
 	margin: 0 auto 30px;
+	white-space: nowrap;
 }
 
 .firstItem {

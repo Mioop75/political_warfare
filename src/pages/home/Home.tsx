@@ -19,7 +19,7 @@ export default function HomePage() {
 			{tab === 'mining' ? (
 				<Mining />
 			) : (
-				<>
+				<div className={styles.nav}>
 					<img src={cabinetImg} className={styles.bg} />
 					<div className={styles.coins}>
 						<img src={coinIcon} alt="" className={styles.coins_img} />
@@ -41,7 +41,7 @@ export default function HomePage() {
 						<img src={energyIcon} alt="" className={styles.energy_img} />
 						<div className={styles.energy_text}>999/1000</div>
 					</div>
-				</>
+				</div>
 			)}
 		</div>
 	);

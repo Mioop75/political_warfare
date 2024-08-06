@@ -47,7 +47,7 @@ const AirDrop = () => {
 					</Text>
 				</li>
 			</ul>
-			<Button>Подписывайтесь на наш канал в TG</Button>
+			<Button className={styles.btn}>Подписывайтесь на наш канал в TG</Button>
 		</div>
 	);
 };

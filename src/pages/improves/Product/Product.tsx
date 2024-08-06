@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import Coins from '../../../components/shared/Coins/Coins';
 import Button from '../../../components/ui/Button/Button';
 import Sheet from '../../../components/ui/Sheet/Sheet';
 import Text from '../../../components/ui/Text/Text';
-import AnimationCoins from './AnimationCoins/AnimationCoins';
+import { useAppDispatch } from '../../../hooks/useSelector';
+import { openDrawer } from '../../../store/drawer/drawer.slice';
 import { IProductComponent } from './Product.interface';
 import styles from './Product.module.css';
 
@@ -15,12 +15,10 @@ const Product = ({
 	coins,
 	disabled,
 }: IProductComponent) => {
-	const [purchasedProduct, setPurchasedProduct] = useState(false);
+	const dispatch = useAppDispatch();
 
 	const buyProduct = () => {
-		setPurchasedProduct(true);
-
-		setTimeout(() => setPurchasedProduct(false), 2000);
+		dispatch(openDrawer('product'));
 	};
 
 	return (
@@ -31,8 +29,6 @@ const Product = ({
 					<Text>{title}</Text>
 				</div>
 				<div>
-					{purchasedProduct && <AnimationCoins />}
-
 					<Button onClick={buyProduct} disabled={disabled}>
 						Купить {sum}
 					</Button>

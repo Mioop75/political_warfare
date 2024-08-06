@@ -1,0 +1,27 @@
+.img {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 30px;
+}
+
+.title {
+	margin-bottom: 10px;
+}
+
+.text {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.profit {
+	margin-bottom: 30px;
+}
+
+.profit button {
+	display: none;
+}
+
+.profit div:first-child {
+	font-size: 16px;
+}

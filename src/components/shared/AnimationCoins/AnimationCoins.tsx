@@ -1,10 +1,10 @@
 import coinIcon from '@/assets/icons/coin-icon.svg';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from './AnimationCoins.module.css';
 
 const AnimationCoins = () => {
-	const [a, seta] = useState<{ y: number; x: number }[]>([
+	const [a] = useState<{ y: number; x: number }[]>([
 		{
 			y: 0,
 			x: 0,
@@ -17,21 +17,31 @@ const AnimationCoins = () => {
 			y: 0,
 			x: 85,
 		},
+		{
+			y: 0,
+			x: 100,
+		},
+		{
+			y: 0,
+			x: 150,
+		},
+		{
+			y: 0,
+			x: 200,
+		},
+		{
+			y: 0,
+			x: 250,
+		},
+		{
+			y: 0,
+			x: 300,
+		},
+		{
+			y: 0,
+			x: 350,
+		},
 	]);
-
-	useEffect(() => {
-		const time = setTimeout(() => {
-			seta(prev => [
-				...prev,
-				{ y: 0, x: 0 },
-				{ y: -20, x: 45 },
-				{ y: -12, x: 82 },
-				{ y: 0, x: 120 },
-			]);
-		}, 100);
-
-		if (a.length > 50) clearTimeout(time);
-	}, [a]);
 
 	return (
 		<AnimatePresence mode="wait">
@@ -40,7 +50,7 @@ const AnimationCoins = () => {
 					<motion.div
 						key={i}
 						initial={{ y: a.y, x: a.x, opacity: 1 }}
-						animate={{ y: -100, x: 15, opacity: 0 }}
+						animate={{ y: -500, x: 400, opacity: 0 }}
 						transition={{
 							type: 'spring',
 							duration: 5,
