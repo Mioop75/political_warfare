@@ -34,7 +34,7 @@ export default function HomePage() {
 
 						<Link to={'/improves'} className={styles.item}>
 							<img src={img2} alt="" className={styles.item_img} />
-							<div className={styles.item_text}>Добыча</div>
+							<div className={styles.item_text}>Доходы</div>
 						</Link>
 					</div>
 					<div className={styles.energy}>
