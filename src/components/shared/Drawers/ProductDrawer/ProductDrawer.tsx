@@ -1,5 +1,7 @@
 import imgBody1 from '@/assets/images/improves/img-body-1.png';
 import { useState } from 'react';
+import { useAppDispatch } from '../../../../hooks/useSelector';
+import { closeAllDrawers } from '../../../../store/drawer/drawer.slice';
 import Button from '../../../ui/Button/Button';
 import Drawer from '../../../ui/Drawer/Drawer';
 import Title from '../../../ui/Title/Title';
@@ -9,11 +11,15 @@ import styles from './ProductDrawer.module.css';
 
 const ProductDrawer = () => {
 	const [purchasedProduct, setPurchasedProduct] = useState(false);
+	const dispatch = useAppDispatch();
 
 	const buyProduct = () => {
 		setPurchasedProduct(true);
 
-		setTimeout(() => setPurchasedProduct(false), 2000);
+		setTimeout(() => {
+			setPurchasedProduct(false);
+			dispatch(closeAllDrawers());
+		}, 2000);
 	};
 
 	return (
