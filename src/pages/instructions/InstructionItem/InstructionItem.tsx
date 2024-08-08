@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../../components/ui/Button/Button';
+import { useAppSelector } from '../../../hooks/useDispatch';
 import { useAppDispatch } from '../../../hooks/useSelector';
-import { getUser } from '../../../store/user/user.slice';
+import { RootState } from '../../../store';
+import { setInstructioned } from '../../../store/user/user.action';
 import { IInstructionItemComponent } from './InstructionItem.interface';
 import styles from './InstructionItem.module.css';
 
@@ -17,12 +19,16 @@ const InstructionItem = ({
 	setSelectedInstruction,
 }: IInstructionItemComponent) => {
 	const navigate = useNavigate();
+	const { uuid } = useAppSelector((state: RootState) => state.user.user);
 	const dispatch = useAppDispatch();
 
 	const navigateInstruction = () => {
 		if (selectedInstruction === 8) {
-			dispatch(getUser());
-			navigate('/home');
+			dispatch(setInstructioned({ uuid }));
+
+			setTimeout(() => {
+				navigate('/home');
+			}, 100);
 		}
 
 		setSelectedInstruction(prev => prev + 1);
