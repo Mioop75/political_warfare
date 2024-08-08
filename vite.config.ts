@@ -9,7 +9,7 @@ export default defineConfig({
 		port: 5000,
 	},
 	define: {
-		VITE_API_URL: process.env.VITE_API_URL,
+		VITE_API_URL: JSON.stringify(process.env.VITE_API_URL as string),
 	},
 	resolve: {
 		alias: {
