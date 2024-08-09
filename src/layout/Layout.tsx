@@ -9,15 +9,12 @@ import { RootState } from '../store';
 import styles from './Layout.module.css';
 
 const Layout = () => {
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	const telegram = (window as any).Telegram.WebApp;
-	console.log(telegram);
-
 	const { user } = useAppSelector((state: RootState) => state.user);
+
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		if (!user) navigate('/instructions');
+		if (!user?.isInstructioned) navigate('/instructions');
 	}, [user]);
 
 	return (

@@ -7,11 +7,14 @@ import trumpCharacter from '@/assets/images/trump/character_model_01.svg';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Profile from '../../components/shared/Profile/Profile';
+import { useAppSelector } from '../../hooks/useDispatch';
+import { RootState } from '../../store';
 import styles from './Home.module.css';
 import Mining from './Mining/Mining';
 
 export default function HomePage() {
 	const [tab, setTab] = useState('main');
+	const { coins } = useAppSelector((state: RootState) => state.user.user);
 
 	return (
 		<div className={styles.home}>
@@ -23,7 +26,7 @@ export default function HomePage() {
 					<img src={cabinetImg} className={styles.bg} />
 					<div className={styles.coins}>
 						<img src={coinIcon} alt="" className={styles.coins_img} />
-						<div className={styles.coins_text}>120.50</div>
+						<div className={styles.coins_text}>{coins}</div>
 					</div>
 					<div className={styles.row}>
 						<button className={styles.item} onClick={() => setTab('mining')}>

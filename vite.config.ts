@@ -8,6 +8,9 @@ export default defineConfig({
 	server: {
 		port: 5000,
 	},
+	define: {
+		VITE_API_URL: JSON.stringify(process.env.VITE_API_URL as string),
+	},
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
