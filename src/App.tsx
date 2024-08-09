@@ -8,7 +8,6 @@ function App() {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const telegram = (window as any).Telegram.WebApp;
 	const { user } = telegram.initDataUnsafe;
-	console.log(user);
 	console.log(telegram);
 
 	const dispatch = useAppDispatch();
@@ -17,11 +16,7 @@ function App() {
 	useEffect(() => {
 		if (user)
 			dispatch(
-				getMe({
-					name: user.first_name,
-					username: user.username,
-					telegram_id: user.id,
-				})
+				getMe({ name: 'test', username: 'user.username', telegram_id: 1 })
 			);
 	});
 
