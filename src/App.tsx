@@ -7,12 +7,22 @@ import { getMe } from './store/user/user.action';
 function App() {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const telegram = (window as any).Telegram.WebApp;
+	const { user } = telegram.initDataUnsafe;
+	console.log(user);
 	console.log(telegram);
+
 	const dispatch = useAppDispatch();
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		dispatch(getMe({ name: 'test', username: 'test', telegram_id: 1 }));
+		if (user)
+			dispatch(
+				getMe({
+					name: user.first_name,
+					username: user.username,
+					telegram_id: user.id,
+				})
+			);
 	});
 
 	useEffect(() => {
