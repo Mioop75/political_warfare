@@ -17,10 +17,10 @@ const Profile = () => {
 			<div className={styles.firstItem}>
 				<Link to="/profile" className={styles.avatar}>
 					<img src={avatarImg} alt="" className={styles.avatar_img} />
-					<div className={styles.avatar_level}>Ур.{level}</div>
+					<div className={styles.avatar_level}>Ур.{level.current}</div>
 					<div className={styles.bar}>
-						<div className={styles.line} style={{ width: '50%' }}>
-							50%
+						<div className={styles.line} style={{ width: `${level.sum}%` }}>
+							{level.sum}%
 						</div>
 					</div>
 				</Link>
